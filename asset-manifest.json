@@ -1,15 +1,11 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.aaa6f213.css",
-    "main.js": "/react-portfolio/static/js/main.648a2e1a.js",
-    "static/js/787.1ed0c42c.chunk.js": "/react-portfolio/static/js/787.1ed0c42c.chunk.js",
+    "main.js": "/react-portfolio/static/js/main.cad85243.js",
+    "static/media/japanStore.jpg": "/react-portfolio/static/media/japanStore.79427969b4695c7dcac2.jpg",
     "index.html": "/react-portfolio/index.html",
-    "main.aaa6f213.css.map": "/react-portfolio/static/css/main.aaa6f213.css.map",
-    "main.648a2e1a.js.map": "/react-portfolio/static/js/main.648a2e1a.js.map",
-    "787.1ed0c42c.chunk.js.map": "/react-portfolio/static/js/787.1ed0c42c.chunk.js.map"
+    "main.cad85243.js.map": "/react-portfolio/static/js/main.cad85243.js.map"
   },
   "entrypoints": [
-    "static/css/main.aaa6f213.css",
-    "static/js/main.648a2e1a.js"
+    "static/js/main.cad85243.js"
   ]
 }
