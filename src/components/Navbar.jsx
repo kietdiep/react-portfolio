@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 const Container = styled.div`
   height: 60px;
-  position: fixed;
-  z-index: 2;
+  position: absolute;
+  z-index: 5;
 `;
 
 const Wrapper = styled.div`
@@ -30,7 +30,6 @@ const Logo = styled.h1`
 const Right = styled.div`
   margin-left: 1200px;
   display: flex;
-  align-items: center;
   justify-content: flex-end;
 `;
 
@@ -46,14 +45,23 @@ const Navbar = () => {
     <Container>
       <Wrapper>
         <Left>
-          <Link to="/react-portfolio" style={{ color: "white" }}>
+          <Link
+            to="/react-portfolio"
+            style={{ color: "white", textDecoration: "none" }}
+          >
             <Logo>KD.</Logo>
           </Link>
         </Left>
         <Right>
-          <MenuItem>About</MenuItem>
-          <MenuItem>Contact</MenuItem>
-          <MenuItem>Portfolio</MenuItem>
+          <Link to="/about" style={{ textDecoration: "none" }}>
+            <MenuItem>About</MenuItem>
+          </Link>
+          <Link to="/contact" style={{ textDecoration: "none" }}>
+            <MenuItem>Contact</MenuItem>
+          </Link>
+          <Link to="/portfolio" style={{ textDecoration: "none" }}>
+            <MenuItem>Portfolio</MenuItem>
+          </Link>
         </Right>
       </Wrapper>
     </Container>

@@ -1,8 +1,7 @@
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons";
 import { useState } from "react";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import { sliderItems } from "../data";
-import myImage from "../images/back.png";
 import { Link } from "react-router-dom";
 
 const Container = styled.div`
@@ -34,7 +33,7 @@ const Arrow = styled.div`
 
 const Wrapper = styled.div`
   height: 90vh;
-  width: 100vw;
+  display: flex;
   transition: all 1.5s ease;
   transform: translateX(${(props) => props.slideIndex * -100}vw);
 `;
@@ -51,36 +50,64 @@ const Slide = styled.div`
 `;
 
 const InfoContainer = styled.div`
-  padding: 600px 0px 0px 100px;
-  text-align: left;
+  padding-left: 100px;
+  width: 90%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
 `;
 
-const back = keyframes`
-  100% {
-    background-position: 2000px 0;
-  }
+const Left = styled.div`
+  display: flex;
+  justify-content: center;
+  flex: 1;
+
+  margin-left: auto;
+`;
+const Right = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  /* flex: 2; */
+  /* text-align: center; */
 `;
 
 const Title = styled.h1`
-  font-size: 190px;
-  line-height: 160px;
-  margin-left: -10px;
-  color: transparent;
-  -webkit-text-stroke: 1px #fff;
-  background: url(${myImage});
-  -webkit-background-clip: text;
-  background-clip: none;
-  background-position: 0 0;
-  animation: ${back} 20s linear infinite;
-  z-index: 2;
+  color: rgb(251, 250, 245);
+  font-size: 70px;
 `;
 
 const Desc = styled.h3`
-  color: white;
-  margin: 50px 0px;
+  color: rgb(251, 250, 245);
+  inline-size: auto;
   font-size: 40px;
+`;
+
+const Pic = styled.img`
+  max-width: 80%;
+  height: auto;
+  border: 1px solid #fff;
+  border-radius: 8px;
+`;
+
+const UL = styled.ul`
+  list-style: none;
+`;
+
+const LI = styled.li`
+  color: rgb(251, 250, 245);
+  font-size: 30px;
   font-weight: 500;
-  letter-spacing: 3px;
+`;
+
+const Listrow = styled.div`
+  clear: both;
+`;
+const Listcolumn = styled.div`
+  width: 45%;
+  float: left;
 `;
 
 const Slider = () => {
@@ -102,8 +129,52 @@ const Slider = () => {
         {sliderItems.map((item) => (
           <Slide key={item.id} img={item.img}>
             <InfoContainer>
-              <Title>{item.title}</Title>
-              <Desc>{item.desc}</Desc>
+              <Left>
+                <Pic src={item.img2}></Pic>
+              </Left>
+              <Right>
+                <Title>{item.title}</Title>
+                <Desc>{item.desc}</Desc>
+                <Listrow>
+                  <Listcolumn>
+                    <UL>
+                      <LI>{item.list[0]}</LI>
+                      <LI>{item.list[1]}</LI>
+                      <LI>{item.list[2]}</LI>
+                      <LI>{item.list[3]}</LI>
+                      <LI>{item.list[4]}</LI>
+                      <LI>{item.list[5]}</LI>
+                      <LI>{item.list[6]}</LI>
+                      <LI>{item.list[7]}</LI>
+                    </UL>
+                  </Listcolumn>
+                  <Listcolumn>
+                    <UL>
+                      <LI>{item.list[8]}</LI>
+                      <LI>{item.list[9]}</LI>
+                      <LI>{item.list[10]}</LI>
+                      <LI>{item.list[11]}</LI>
+                      <LI>{item.list[12]}</LI>
+                      <LI>{item.list[13]}</LI>
+                      <LI>{item.list[14]}</LI>
+                      <LI>{item.list[15]}</LI>
+                    </UL>
+                  </Listcolumn>
+                  <Listcolumn>
+                    <UL>
+                      <LI style={{ textDecoration: "underline" }}>
+                        {item.list2[0]}
+                      </LI>
+                      <LI style={{ textDecoration: "underline" }}>
+                        {item.list2[1]}
+                      </LI>
+                      <LI style={{ textDecoration: "underline" }}>
+                        {item.list2[2]}
+                      </LI>
+                    </UL>
+                  </Listcolumn>
+                </Listrow>
+              </Right>
             </InfoContainer>
           </Slide>
         ))}
