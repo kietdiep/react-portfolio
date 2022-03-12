@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/react-portfolio/static/js/main.cacd29bb.js",
+    "main.js": "/react-portfolio/static/js/main.f3f7b4af.js",
     "static/media/grad.jpg": "/react-portfolio/static/media/grad.8b9ea0b0e9d08782b0b8.jpg",
     "static/media/hawaii.jpg": "/react-portfolio/static/media/hawaii.5baf276e3c280b742f81.jpg",
     "static/media/japanStore.jpg": "/react-portfolio/static/media/japanStore.79427969b4695c7dcac2.jpg",
@@ -10,9 +10,9 @@
     "static/media/linkedin.png": "/react-portfolio/static/media/linkedin.ed2631894cd2842ab357.png",
     "static/media/github.png": "/react-portfolio/static/media/github.987334e9f782cc505f25.png",
     "index.html": "/react-portfolio/index.html",
-    "main.cacd29bb.js.map": "/react-portfolio/static/js/main.cacd29bb.js.map"
+    "main.f3f7b4af.js.map": "/react-portfolio/static/js/main.f3f7b4af.js.map"
   },
   "entrypoints": [
-    "static/js/main.cacd29bb.js"
+    "static/js/main.f3f7b4af.js"
   ]
 }
