@@ -1,16 +1,16 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import Slider from "../components/Slider";
+import Portfolio from "../components/Portfolio";
 import Footer from "../components/Footer";
 
-const About = () => {
+const PortfolioPage = () => {
   return (
     <div>
       <Navbar />
-      <Slider />
+      <Portfolio />
       <Footer />
     </div>
   );
 };
 
-export default About;
+export default PortfolioPage;

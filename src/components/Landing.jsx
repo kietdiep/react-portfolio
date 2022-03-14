@@ -80,10 +80,10 @@ const Landing = () => {
           <Title>KIET DIEP</Title>
           <Desc>New Grad Full-Stack Developer</Desc>
           <RowButton>
-            <Link to="#" style={{ textDecoration: "none" }}>
+            <Link to="/about" style={{ textDecoration: "none" }}>
               <LinkText>Explore My Page</LinkText>
             </Link>
-            <Link to="#" style={{ textDecoration: "none" }}>
+            <Link to="/contact" style={{ textDecoration: "none" }}>
               <LinkText>
                 Contact Me <span>&#x27F6;</span>
               </LinkText>
